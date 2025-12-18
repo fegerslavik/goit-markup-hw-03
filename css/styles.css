@@ -1,5 +1,19 @@
-ul {
+/* ЗАГАЛЬНЕ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
   list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 a {
@@ -33,36 +47,97 @@ body {
   color: #2e2f42;
 }
 
-.site-nav ul li a {
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ХЕДЕР */
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ЛОГО */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.header-logo .logo-part {
+  color: #2e2f42;
+}
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+/* НАВІГАЦІЯ */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: #404bbf;
-}
-
-.address-class {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  color: #434455;
-}
-
-.address-class a {
-  color: #434455;
-}
-
+.header-nav a:hover,
+.header-nav a:focus,
 .address-class a:hover,
 .address-class a:focus {
   color: #404bbf;
 }
 
+.address-class {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  display: block;
+  padding: 24px 0;
+}
+
+/* ХЕРО СЕКЦІЯ */
 .hero-section {
   background-color: #2e2f42;
   color: #ffffff;
@@ -74,7 +149,6 @@ body {
   margin-bottom: 20px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .button-class {
@@ -92,6 +166,22 @@ body {
 .button-class:focus {
   background-color: #404bbf;
 }
+
+/* ПЕРЕВАГИ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* КОМАНДА */
 .team-section {
   background-color: #f4f4fd;
   font-size: 16px;
@@ -120,6 +210,7 @@ body {
   text-align: center;
 }
 
+/* ПОРТФОЛІО */
 .portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -135,38 +226,8 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* ФУТЕР */
 .footer-class {
   background-color: #2e2f42;
-  color: #f4f4fd;
-}
-
-.logo-full {
-  text-transform: uppercase;
-}
-
-.logo-web {
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #4d5ae5;
-}
-
-.logo-studio-top {
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #2e2f42;
-}
-
-.logo-studio-bottom {
-  font-family: raleway, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
   color: #f4f4fd;
 }

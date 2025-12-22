@@ -221,6 +221,10 @@ body {
   flex: 1;
 }
 
+.features-item h3 {
+  margin-bottom: 8px;
+}
+
 /* КОМАНДА */
 .team-section {
   background-color: #f4f4fd;
